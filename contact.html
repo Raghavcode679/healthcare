@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - HealthCare Services</title>
+  <style>
+    /* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease-in-out;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f8f8;
+}
+
+/* Header */
+.header {
+    background-color: lightblue;
+    color: black;
+    padding: 1em 0;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 2em;
+    transition-duration: 1s;
+}
+.header h1:hover{
+    color:darkblue;
+    font-size: 60px;
+}
+
+.header nav a {
+    color:black;
+    margin: 0 1em;
+    text-decoration: none;
+    transition: color 0.5s;
+}
+
+.header nav a:hover {
+    color: red;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+/* Section Containers */
+.container {
+    max-width: 1200px;
+    margin: auto;
+    padding: 2em;
+    text-align: center;
+}
+
+/* Contact Section */
+.contact-section {
+    background-color: #fff;
+    padding: 2em 0;
+}
+
+.contact-section h2 {
+    font-size: 2em;
+    color: orange;
+    margin-bottom: 1em;
+}
+
+.contact-info {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 1em;
+}
+
+.contact-info .info {
+    width: 30%;
+    transition: transform 0.3s;
+}
+
+.contact-info .info:hover {
+    transform: scale(1.1);
+}
+
+/* Form Section */
+.form-section {
+    background-color: #0077b6;
+    color: #fff;
+    padding: 2em 0;
+}
+
+.form-section h2 {
+    font-size: 2em;
+}
+
+.form-section form input, 
+.form-section form textarea, 
+.form-section form button {
+    width: 80%;
+    padding: 1em;
+    margin: 0.5em 0;
+    border: none;
+    border-radius: 5px;
+}
+
+.form-section form input:focus,
+.form-section form textarea:focus {
+    background-color: #fff;
+    color: #333;
+}
+
+.form-section form button {
+    background-color: #ffc107;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.form-section form button:hover {
+    background-color: #ffae00;
+}
+
+/* Location Section */
+.location-section {
+    background-color: #e0e0e0;
+    padding: 2em 0;
+}
+
+.location-section img {
+    width: 80%;
+    margin-top: 1em;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s;
+}
+
+.location-section img:hover {
+    transform: scale(1.05);
+}
+
+/* FAQ Section */
+.faq-section {
+    background-color: #fff;
+    padding: 2em 0;
+}
+
+.faq-section h2 {
+    font-size: 2em;
+    color: #0077b6;
+}
+
+.faq {
+    margin-top: 1em;
+    transition: background-color 0.3s;
+    padding: 1em;
+}
+
+.faq:hover {
+    background-color: #f1f1f1;
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 40px 0;
+    position: relative;
+    right: 0px;
+    
+     bottom:0px;
+     width:100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fff;
+}
+
+.footer-section h3::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #f4f4f4;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.4s ease;
+}
+
+.footer-section:hover h3::after {
+    width: 100px;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-section form input {
+    padding: 8px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.footer-section form button {
+    padding: 8px 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-section form button:hover {
+    background-color: #ff3b3b;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    background-color: #444;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-5px);
+}
+
+.social-icon.facebook { background-image: url('12.jpg');
+  background-size: cover; }
+.social-icon.twitter { background-image: url('15.jpg');
+  background-size: cover; }
+.social-icon.instagram { background-image: url('11.jpg'); 
+  background-size: cover;
+}
+.social-icon.youtube { background-image: url('14.jpg');
+background-size: cover;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+} 
+  </style>
+</head>
+<body>
+
+    <!-- Header Section -->
+    <header class="header">
+        <div class="container">
+            <h1>HealthCare Services</h1>
+            <nav>
+                <a href="#contact">Contact</a>
+                <a href="#location">Location</a>
+                <a href="#faq">FAQ</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Get In Touch Section -->
+    <section id="contact-form" class="form-section">
+        <div class="container">
+            <h2>Get In Touch</h2>
+            <form id="contactForm" onsubmit="return false;">
+                <input type="text" id="name" placeholder="Your Name" required>
+                <input type="email" id="email" placeholder="Your Email" required>
+                <textarea id="message" placeholder="Your Message" required></textarea>
+                <button type="submit" onclick="submitContactForm()">Submit</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="footer-container">
+            <!-- Section 1: About Us -->
+            <div class="footer-section">
+                <h3>About Us</h3>
+                <p>We are committed in helping you treating your severe diseases and live a healthy life. </p>
+            </div>
+    
+            <!-- Section 2: Quick Links -->
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">HealthCare</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+    
+            <!-- Section 3: Contact Info -->
+            <div class="footer-section">
+                <h3>Contact Us</h3>
+                <p>Phone: +123 456 7890</p>
+                <p>Email: infocareconnect@gmail.com</p>
+                <p>Address: 123 Model Ave, Holy City, Healthland</p>
+            </div>
+    
+            <!-- Section 4: Newsletter -->
+            <div class="footer-section">
+                <h3>Newsletter</h3>
+                <p>Subscribe to our newsletter for the latest updates in Care Connect</p>
+                <form>
+                    <input type="email" placeholder="Enter your email" required>
+                    <button type="submit">Subscribe</button>
+                </form>
+            </div>
+    
+            <!-- Section 5: Social Media -->
+            <div class="footer-section">
+                <h3>Follow Us</h3>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/" class="social-icon facebook"></a>
+                    <a href="https://www.instagram.com/" class="social-icon twitter"></a>
+                    <a href="https://www.youtube.com/" class="social-icon instagram"></a>
+                    <a href="https://www.twitter.com/" class="social-icon youtube"></a>
+                </div>
+            </div>
+        </div>
+    
+        <div class="footer-bottom">
+            <p>&copy; 2024 Care Connect Website | Designed with care</p>
+        </div>
+    </footer>
+
+    <script>
+        function submitContactForm() {
+            // Get the values from the form
+            const name = document.getElementById('name').value;
+            const email = document.getElementById('email').value;
+            const message = document.getElementById('message').value;
+
+            // Check if all fields are filled
+            if (name && email && message) {
+                // Show an alert with the submitted information
+                alert(`Thank you for contacting us, ${name}!\n\nWe have received your message:\n\n"${message}"\n\nWe will get back to you shortly at ${email}.`);
+
+                // Reset the form fields
+                document.getElementById('contactForm').reset();
+            } else {
+                alert('Please fill in all fields.');
+            }
+        }
+    </script>
+
+</body>
+</html>

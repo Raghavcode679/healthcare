@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Patient-Centered Care</title>
+  <style>
+    /* General reset and font setup */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: Arial, sans-serif;
+      transition: all 0.3s ease-in-out;
+    }
+
+    body {
+      line-height: 1.6;
+      background-color: #f4f4f9;
+      color: #333;
+    }
+
+    /* Header styling */
+    header {
+      background: #005b96;
+      color: #fff;
+      padding: 1rem;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+      animation: fadeIn 1s ease-in;
+    }
+
+    header nav ul {
+      list-style: none;
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+
+    header nav ul li {
+      margin: 0 1.5rem;
+    }
+
+    header nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2rem;
+    }
+    header nav ul li  :hover{
+        color: #ffa500;
+
+    }
+
+    /* Section styling */
+    section {
+      padding: 2rem 5%;
+      text-align: center;
+    }
+
+    .content h2 {
+      font-size: 2rem;
+      color: #005b96;
+      margin-bottom: 1rem;
+      animation: slideUp 1s ease-in;
+    }
+
+    .content p {
+      font-size: 1.1rem;
+      margin-bottom: 1.5rem;
+    }
+
+    /* Grid for services */
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+
+    .service-card {
+      background: #fff;
+      border-radius: 8px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      transition: transform 0.3s ease-in-out;
+    }
+
+    .service-card:hover {
+      transform: scale(1.05);
+    }
+
+    .service-card img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+
+    /* Footer styling */
+    footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 40px 0;
+    position: relative;
+    right: 0px;
+     
+     bottom:0px;
+     width:100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fff;
+}
+
+.footer-section h3::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #f4f4f4;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.4s ease;
+}
+
+.footer-section:hover h3::after {
+    width: 100px;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-section form input {
+    padding: 8px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.footer-section form button {
+    padding: 8px 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-section form button:hover {
+    background-color: #ff3b3b;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    background-color: #444;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-5px);
+}
+
+.social-icon.facebook { background-image: url('12.jpg');
+  background-size: cover; }
+.social-icon.twitter { background-image: url('15.jpg');
+  background-size: cover; }
+.social-icon.instagram { background-image: url('11.jpg'); 
+  background-size: cover;
+}
+.social-icon.youtube { background-image: url('14.jpg');
+background-size: cover;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+} 
+#ee{
+    display: inline;
+}
+
+
+#nnn{
+    width:40px;
+    height:40px;
+    border-radius: 50px;
+    position: absolute;
+    top:20px;
+    right:90px;
+}
+    /* Animation keyframes */
+    @keyframes fadeIn {
+      from {
+        opacity: 0;
+      }
+      to {
+        opacity: 1;
+      }
+    }
+
+    @keyframes slideUp {
+      from {
+        transform: translateY(20px);
+      }
+      to {
+        transform: translateY(0);
+      }
+    }
+    #aa{
+        width: 1000px;
+        height:500px;
+    }
+   #vc{
+        width: 1000px;
+        height:500px;
+    }
+
+  </style>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Patient-Centered Care</h1>
+    <nav>
+      <ul>
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#team">Our Team</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- About Section -->
+  <section id="about" class="content">
+    <h2>What is Patient-Centered Care?</h2>
+    <p>Patient-centered care is a model of care that prioritizes the individual needs, preferences, and values of each patient. It is a holistic approach, focusing on providing compassionate, coordinated, and accessible healthcare that respects each person's unique circumstances.</p>
+    <img id="vc" src="pa.jpg" alt="Patient-centered care image">
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="content">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-card">
+        <img id="ma" src="pa1.jpg" alt="Primary Care">
+        <h3>Primary Care</h3>
+        <p>Our primary care services include routine check-ups, preventive care, and health assessments.</p>
+      </div>
+      <div class="service-card">
+        <img src="pa2.jpg" alt="Specialty Care">
+        <h3>Specialty Care</h3>
+        <p>We offer specialized care tailored to complex health conditions across various disciplines.</p>
+      </div>
+      <div class="service-card">
+        <img src="pa3.jpg" alt="Mental Health Support">
+        <h3>Mental Health Support</h3>
+        <p>We provide comprehensive mental health support, focusing on the emotional and psychological well-being of our patients.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Team Section -->
+  <section id="team" class="content">
+    <h2>Meet Our Team</h2>
+    <p>Our team of experienced healthcare providers is dedicated to offering compassionate, high-quality care. We are here to support you every step of the way.</p>
+    <img id="aa" src="er.jpg" alt="Our team image">
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="content">
+    <h2>Contact Us</h2>
+    <p>For more information or to schedule an appointment, please reach out. We are here to answer your questions and provide the care you need.</p>
+    <p><strong>Email:</strong> info@patientcenteredcare.com</p>
+    <p><strong>Phone:</strong> (123) 456-7890</p>
+  </section>
+  <br>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+        <!-- Section 1: About Us -->
+        <div class="footer-section">
+            <h3>About Us</h3>
+            <p>We are committed in helping you treating your severe diseases and live a healthy life. </p>
+        </div>
+
+        <!-- Section 2: Quick Links -->
+        <div class="footer-section">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">HealthCare</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+
+        <!-- Section 3: Contact Info -->
+        <div class="footer-section">
+            <h3>Contact Us</h3>
+            <p>Phone: +123 456 7890</p>
+            <p>Email: infocareconnect@gmail.com</p>
+            <p>Address: 123 Model Ave, Holy City, Healthland</p>
+        </div>
+
+        <!-- Section 4: Newsletter -->
+        <div class="footer-section">
+            <h3>Newsletter</h3>
+            <p>Subscribe to our newsletter for the latest updates in Care Connect</p>
+            <form>
+                <input type="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+        </div>
+
+        <!-- Section 5: Social Media -->
+        <div class="footer-section">
+            <h3>Follow Us</h3>
+            <div class="social-icons">
+                <a href="https://www.facebook.com/" class="social-icon facebook"></a>
+                <a href="https://www.instagram.com/" class="social-icon twitter"></a>
+                <a href="https://www.youtube.com/" class="social-icon instagram"></a>
+                <a href="https://www.twitter.com/" class="social-icon youtube"></a>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer-bottom">
+        <p>&copy; 2024 Care Connect Website | Designed with care</p>
+    </div>
+</footer>
+
+</body>
+</html>

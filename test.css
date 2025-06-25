@@ -1,0 +1,165 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+header {
+    display: flex;
+    align-items: center;
+    padding: 1rem 2rem;
+    background-color: #004080;
+    color: #fff;
+}
+
+.logo img {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+    margin-left: auto;
+}
+
+nav ul li {
+    display: inline;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ffdd57;
+}
+
+.btn-appointment {
+    background-color: #ffdd57;
+    color: #004080;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    font-weight: bold;
+}
+
+/* Hero Section */
+.hero {
+    background-image: url('your-background-image.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 4rem 2rem;
+    text-align: center;
+}
+
+.hero h1 {
+    font-size: 2.5rem;
+}
+
+.hero .btn-primary, .hero .btn-secondary {
+    display: inline-block;
+    margin: 1rem;
+    padding: 0.5rem 1.5rem;
+    border-radius: 5px;
+    color: #004080;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-primary {
+    background-color: #ffdd57;
+}
+
+.btn-secondary {
+    background-color: #fff;
+}
+
+/* Search Section */
+.search-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+    background-color: #f9f9f9;
+}
+
+.alphabetical-search .letters a {
+    color: #004080;
+    padding: 0.5rem;
+    text-decoration: none;
+}
+
+/* Info Section */
+.info-section {
+    display: flex;
+    gap: 2rem;
+    padding: 2rem;
+}
+
+.info-card {
+    flex: 1;
+    background-color: #e8f0fe;
+    padding: 2rem;
+    border-radius: 8px;
+    text-align: center;
+}
+
+/* Locations Section */
+.locations {
+    padding: 2rem;
+    text-align: center;
+}
+
+.location-grid {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+}
+
+.location-card {
+    flex: 1;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+/* Footer */
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 2rem;
+    text-align: center;
+}
+
+.footer-top {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 1rem;
+}
+
+.footer-links ul {
+    list-style: none;
+}
+
+.footer-links a {
+    color: #ffdd57;
+    text-decoration: none;
+}
+
+.footer-bottom {
+    border-top: 1px solid #555;
+    padding-top: 1rem;
+}

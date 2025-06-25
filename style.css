@@ -1,0 +1,630 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease; /* Smooth transitions */
+}
+
+/* Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: #fff;
+    padding: 1rem;
+    text-align: center;
+}
+header nav a {
+    color: #fff;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #eee;
+}
+
+/* Intro Section */
+.intro {
+    padding: 2rem;
+    text-align: center;
+}
+.intro .btn {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    display: inline-block;
+    transition: background-color 0.3s;
+}
+.intro .btn:hover {
+    background-color: #45a049;
+}
+
+/* Disease Section */
+.disease-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    justify-content: center;
+    padding: 2rem;
+}
+.disease-item {
+    background: #f9f9f9;
+    border: 1px solid #ddd;
+    padding: 1.5rem;
+    border-radius: 8px;
+    width: 300px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.disease-item:hover {
+    transform: scale(1.05);
+    background-color: #e9f5e9;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem;
+}
+/* Reset and Global Styling */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.3s ease;
+}
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: #4CAF50;
+    color: white;
+    padding: 1rem;
+    text-align: center;
+}
+header nav a {
+    color: white;
+    margin: 0 1rem;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+header nav a:hover {
+    color: #ddd;
+}
+
+/* Form Section */
+#form-section {
+    padding: 2rem;
+    text-align: center;
+}
+#medicalForm {
+    max-width: 500px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+}
+#medicalForm label {
+    margin-top: 1rem;
+}
+#medicalForm input, #medicalForm textarea {
+    padding: 0.5rem;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+#medicalForm button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    margin-top: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+#medicalForm button:hover {
+    background-color: #45a049;
+}
+
+/* Doctor Section */
+#doctor-section {
+    padding: 2rem;
+    text-align: center;
+}
+.doctor-card {
+    border: 1px solid #ddd;
+    padding: 1rem;
+    border-radius: 8px;
+    margin: 1rem auto;
+    max-width: 400px;
+    text-align: center;
+    transition: transform 0.3s, background-color 0.3s;
+}
+.doctor-card img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.doctor-card:hover {
+    transform: scale(1.05);
+    background-color: #e9f5e9;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f9;
+}
+/* Navbar Styling */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #004080;
+    padding: 1rem 2rem;
+    color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.navbar a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease;
+}
+.navbar a:hover {
+    color: #ffcc00;
+}
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+.dropdown-content {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #f9f9f9;
+    min-width: 200px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+    z-index: 1;
+    opacity: 0;
+    transform: translateY(10px);
+    transition: opacity 0.3s ease, transform 0.3s ease;
+}
+.dropdown-content a {
+    color: #333;
+    padding: 12px 16px;
+    display: block;
+    transition: background-color 0.3s ease;
+}
+.dropdown-content a:hover {
+    background-color: #ddd;
+    color:red;
+}
+/* Show dropdown on active class */
+.dropdown.active .dropdown-content {
+    display: block;
+    opacity: 1;
+    transform: translateY(0);
+}
+.dropdown-arrow {
+    margin-left: 5px;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+.dropdown.active .dropdown-arrow {
+    transform: rotate(180deg);
+}
+/* Sign-Up Button */
+.signup-button {
+    padding: 0.5rem 1rem;
+    background-color: #ffcc00;
+    color: red;
+    border-radius: 20px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    transition:color 2s ease, transform 2s ease;
+}
+.signup-button:hover {
+    background-color: #ffcc00;
+    transform: scale(1.1);
+    color: red;
+   
+}
+#ee:hover{
+        color:red;
+}
+ /* General page reset */
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Fullscreen background slider */
+.slider-container {
+    top: 40px;
+  position: absolute;
+  width: 100%;
+  height: 90vh; /* Set desired height here, e.g., 50vh or 600px */
+  overflow: hidden;
+}
+
+.slide {
+  width: 100%;
+  height: 90vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-size: cover;
+  background-position: center;
+  transition: opacity 1s ease;
+  opacity: 0;
+}
+
+/* Show first slide initially */
+.slide.active {
+  opacity: 1;
+}
+
+/* Slide navigation buttons */
+.nav-button {
+  position: absolute;
+  top: 50%;
+  width: 50px;
+  height: 50px;
+  background-color: rgba(0, 0, 0, 0.5);
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 24px;
+  transform: translateY(-50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1;
+}
+#hi{
+    position: absolute;
+    top:65px;
+    height:600px;
+}
+
+
+.nav-button.left {
+  left: 10px;
+}
+
+.nav-button.right {
+  right: 10px;
+}
+/* Request Appointment Button */
+.appointment-button {
+    height:55px;
+    width:250px;
+  position: absolute;
+  bottom: 80px;
+  left: 700px;
+  padding: 12px 24px;
+  font-size: 16px;
+  color: white;
+  background-color: rgba(0, 0, 0, 0.6);
+  border: none;
+  border-radius: 25px;
+  cursor: pointer;
+  z-index: 1;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.appointment-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+  transform: scale(1.05);
+}
+
+/* Ensuring page content appears over the video */
+.content {
+  position: relative;
+  color: white;
+  text-align: center;
+  font-size: 24px;
+  margin-top: 20%;
+  z-index: 1;
+}
+#ty{
+    position: absolute;
+    top:800px;
+    bottom:10px;
+
+    right:150px;
+   
+}
+#hm{
+    position: absolute;
+    top:900px;
+    left:450px;
+    /* font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif; */
+}
+#mr{
+    position: absolute;
+    top:70px;
+}
+#nj{
+    position: absolute;
+    top:900px;
+    left:450px;
+}
+#vb{
+    position: absolute;
+    top:72px;
+}
+#nc{
+    position: relative;
+    top: 80px;
+} 
+#mm{
+    position: absolute;
+    top: 1000px;
+}
+#tu{
+    position: absolute;
+    top:1600px;
+    bottom:10px;
+
+    left:150px;
+}
+#hx{
+    position: relative;
+    top: 1600px;
+    left:750px;
+}
+#mx{
+    position: relative;
+ top: 15px;
+}
+#mk{
+    position: relative;
+ top: 15px;
+}
+#vb{
+    position: absolute;
+    top:100px;
+}
+ footer {
+    background-color: #333;
+    color: #f4f4f4;
+    padding: 40px 0;
+    position: relative;
+    right: 0px;
+    top:2500px;
+     bottom:0px;
+     width:100%;
+}
+
+.footer-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    margin: 20px;
+    min-width: 200px;
+    transition: transform 0.3s ease;
+}
+
+.footer-section h3 {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    position: relative;
+    color: #fff;
+}
+
+.footer-section h3::after {
+    content: '';
+    width: 50px;
+    height: 3px;
+    background-color: #f4f4f4;
+    position: absolute;
+    left: 0;
+    bottom: -5px;
+    transition: width 0.4s ease;
+}
+
+.footer-section:hover h3::after {
+    width: 100px;
+}
+
+.footer-section p, .footer-section ul, .footer-section form {
+    font-size: 0.9rem;
+    color: #ddd;
+}
+
+.footer-section ul {
+    list-style: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin: 8px 0;
+}
+
+.footer-section ul li a {
+    color: #f4f4f4;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.footer-section ul li a:hover {
+    color: #ffd700;
+}
+
+.footer-section form input {
+    padding: 8px;
+    width: 70%;
+    border: none;
+    border-radius: 4px;
+    margin-right: 10px;
+    outline: none;
+}
+
+.footer-section form button {
+    padding: 8px 15px;
+    background-color: #ff6b6b;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.footer-section form button:hover {
+    background-color: #ff3b3b;
+}
+
+.social-icons {
+    display: flex;
+}
+
+.social-icon {
+    display: block;
+    width: 40px;
+    height: 40px;
+    margin: 0 5px;
+    background-color: #444;
+    border-radius: 50%;
+    transition: background-color 0.3s, transform 0.3s;
+}
+
+.social-icon:hover {
+    background-color: #ff6b6b;
+    transform: translateY(-5px);
+}
+
+.social-icon.facebook { background-image: url('12.jpg');
+  background-size: cover; }
+.social-icon.twitter { background-image: url('15.jpg');
+  background-size: cover; }
+.social-icon.instagram { background-image: url('11.jpg'); 
+  background-size: cover;
+}
+.social-icon.youtube { background-image: url('14.jpg');
+background-size: cover;
+
+}
+
+.footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    color: #aaa;
+}
+
+@media (max-width: 768px) {
+    .footer-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer-section {
+        text-align: center;
+    }
+} 
+#ee{
+    display: inline;
+}
+#nu{
+    position: absolute;
+    top:1850px;
+    left: 700px;
+}
+#nnn{
+    width:40px;
+    height:40px;
+    border-radius: 50px;
+    position: absolute;
+    top:20px;
+    right:90px;
+}
+.locations {
+    padding: 2rem;
+    text-align: center;
+    position: absolute;
+    top:2400px;
+    left:60px;
+}
+
+.location-grid {
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+}
+
+.location-card {
+    flex: 1;
+    width:300px;
+    height:200px;
+    background-color: #fff;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    transition-duration: 0.5s;
+}
+.location-card:hover{
+    transform: translateY(-7px);
+}
+#ha{
+ position:absolute;
+ left:120px;
+ top:-30px;
+}
+.btn-primary{
+    position: absolute;
+    top:260px;
+}
+#qq{
+    background-image: url(hos.jpg);
+    background-size: cover;
+
+}
+#l{
+    background-image: url(hos1.jpg);
+    background-size: cover;
+
+}
+#qe{
+    background-image: url(hos3.jpg);
+    background-size: cover;
+
+}
+#qr{
+    background-image: url(hos4.jpg);
+    background-size: cover;
+
+}
